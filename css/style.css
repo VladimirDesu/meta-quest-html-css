@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Helvetica', sans-serif;
+  src: url(../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica Bold', sans-serif;
+  src: url(../fonts/helvetica-bold.woff2);
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5C5C5E;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #CACAD6;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 0 20px;
+}
+
+.header__basket {
+  position: relative;
+}
+
+.header__basket span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
+  background-color: #f94f4f;
+  border-radius: 50%;
+  color: white;
+}
+
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/bg-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 100px;
+}
+
+.top__title {
+  line-height: 1;
+}
+.top__subtitle {
+  margin-top: 10px;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.top__description {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.top__btns {
+  margin-top: 20px;
+}
+.btn-gr {
+  width: 300px;
+  height: 60px;
+  font-weight: bold;
+  border: 0;
+}
+
+.btn-bg-gr {
+  background: linear-gradient(#BC10D8, #5000FA);
+  color: #F6F4F5;
+}
+
+.btn-outline-gr {
+  color: #5C5C5E;
+  background: transparent;
+  border-image: linear-gradient(#BC10D8, #5000FA) 10;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btns-group .btn-outline-gr {
+  margin-left: -5px;
+}
+
+.top__text {
+  margin-top: 5px;
+  font-size: 13px;
+}

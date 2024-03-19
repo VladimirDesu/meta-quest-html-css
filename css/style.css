@@ -53,6 +53,20 @@ button {
   padding: 0;
 }
 
+.btn-outline {
+  display: flex;
+  width: 250px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-image: linear-gradient(#BC10D8, #5000FA) 10;
+  border-width: 1px;
+  border-style: solid;
+  background: linear-gradient(#BC10D8, #5000FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .section-title {
   font-size: 16px;
 }
@@ -172,6 +186,7 @@ button {
 
 .products {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .products__top {
@@ -219,6 +234,7 @@ button {
   grid-template-rows: auto 150px;
   gap: 40px;
   opacity: 0;
+  transition: opacity .3s ease;
 }
 
 .tabs__content-item_active {
@@ -257,4 +273,57 @@ button {
 .tabs__content-img  {
   grid-row: 1/span 2;
   align-self: stretch;
+}
+
+.games {
+  padding-top: 100px;
+}
+
+.games__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.games__desc {
+  max-width: 300px;
+  padding-right: 10px;
+
+}
+
+.games__desc-title {
+  margin-top: 50px;
+}
+
+.games__desc-text {
+  margin-top: 6px;
+}
+
+.games__desc-link {
+  margin-top: 30px;
+}
+
+.games__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-image: linear-gradient(#BC10D8, #5000FA) 10;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.games__card-title {
+  font-size: 24px;
+  margin-top: 6px;
+}
+
+.games__card-desc {
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.games__card-link {
+  background: linear-gradient(#BC10D8, #5000FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto auto 0 0;
 }

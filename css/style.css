@@ -43,8 +43,27 @@ body {
   color: #5C5C5E;
 }
 
-h1 {
-  font-size: 96px;
+button {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 16px;
+}
+
+.section-desc {
+  line-height: 1.1;
+  font-size: 36px;
+  text-transform: uppercase;
+  background: linear-gradient(#BC10D8, #5000FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -58,8 +77,8 @@ h1 {
 }
 
 .header__nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 80px;
 }
@@ -71,6 +90,7 @@ h1 {
 
 .header__basket {
   position: relative;
+  justify-self: end;
 }
 
 .header__basket span {
@@ -88,6 +108,10 @@ h1 {
   color: white;
 }
 
+.header__logo {
+  justify-self: center;
+}
+
 .top {
   min-height: calc(100vh - 81px);
   background-image: url(../images/bg-top.jpg);
@@ -98,6 +122,8 @@ h1 {
 }
 
 .top__title {
+  font-size: 96px;
+  font-weight: 400;
   line-height: 1;
 }
 .top__subtitle {
@@ -142,4 +168,93 @@ h1 {
 .top__text {
   margin-top: 5px;
   font-size: 13px;
+}
+
+.products {
+  padding-top: 100px;
+}
+
+.products__top {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.products__title {
+  flex-basis: 300px;
+  padding-right: 20px;
+}
+
+.products__desc {
+  max-width: 329px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.tabs__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.tabs__btn {
+  font-weight: bold;
+}
+
+.tabs__btn_active {
+  color: black;
+}
+
+.tabs__content {
+  position: relative;
+}
+
+.tabs__content-item {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto 280px;
+  grid-template-rows: auto 150px;
+  gap: 40px;
+  opacity: 0;
+}
+
+.tabs__content-item_active {
+  opacity: 1;
+}
+
+.tabs__content-title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.tabs__content-video {
+  grid-column: 2;
+  width: 280px;
+  height: 150px;
+  background-image: url(../images/video-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.tabs__content-play {
+  margin-left: 30px;
+}
+
+.tabs__content-hint {
+  margin-left: 10px;
+  font-size: 13px;
+  color: white;
+}
+
+.tabs__content-img  {
+  grid-row: 1/span 2;
+  align-self: stretch;
 }

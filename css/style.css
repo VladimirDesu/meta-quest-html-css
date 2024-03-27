@@ -98,7 +98,7 @@ input:focus {
   border-bottom: 1px solid #CACAD6;
 }
 
-.header__nav {
+.nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -130,7 +130,7 @@ input:focus {
   color: white;
 }
 
-.header__logo {
+.nav__logo {
   justify-self: center;
 }
 
@@ -508,3 +508,20 @@ input:focus {
   align-self: end;
   justify-self: end;
 }
+
+.footer {
+  margin-bottom: 44px;
+  border-top: 1px solid #CACAD6;
+  border-bottom: 1px solid #CACAD6;
+}
+
+.footer nav {
+  height: 100px;
+}
+
+.footer__socials {
+  display: flex;
+  justify-self: end;
+  gap: 20px;
+}
+

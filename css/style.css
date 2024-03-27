@@ -53,6 +53,14 @@ button {
   padding: 0;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .btn-outline {
   display: flex;
   width: 250px;
@@ -370,4 +378,133 @@ button {
 
 .inner-box__content-item_one {
   grid-row: span 2;
+}
+
+.promo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.promo__inner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 500px;
+}
+
+.promo__img {
+  position: absolute;
+  z-index: -1;
+}
+
+.promo__btn {
+  align-self: flex-end;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 80px;
+  background: linear-gradient(#BC10D8, #5000FA);
+  color: white;
+  border-radius: 50%;
+}
+
+.accessories {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.accessories__title {
+  margin-bottom: 30px;
+}
+
+.accessories__desc {
+  margin-bottom: 30px;
+}
+
+.accessories__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.accessories__card {
+  display: grid;
+  grid-template-rows: 278px 67px;
+  padding: 20px;
+  border-image: linear-gradient(#BC10D8, #5000FA) 10;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.accessories__card-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.accessories__card-price {
+  align-self: end;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.accessories__card-desc {
+  margin-top: 6px;
+}
+
+.accessories__card-btn {
+  width: 100%;
+  height: 30px;
+  justify-self: center;
+  align-self: end;
+}
+
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #070707;
+}
+
+.contacts__email {
+  position: relative;
+}
+
+.contacts__email-input {
+  width: 600px;
+  height: 55px;
+  border-bottom: 1px solid #CACAD6;
+}
+
+.contacts__email-input:focus {
+  border-color: #BC10D8;
+}
+
+.contacts__submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #CACAD6;
+  color: #5C5C5E;
+  border-radius: 50%;  
+}
+
+.contacts__desc {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.contacts__email-text {
+  align-self: end;
+  justify-self: end;
 }
